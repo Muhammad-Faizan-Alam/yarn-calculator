@@ -1,9 +1,9 @@
-"use client"; // Add this if using Next.js App Router
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { FaBars, FaTimes } from "react-icons/fa"; // Icons for menu
-import { LuConstruction } from "react-icons/lu";
+import { GiYarn } from "react-icons/gi";
 import clsx from 'clsx';
 
 const pages = [
@@ -17,11 +17,11 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white p-4 fixed w-full z-50">
+    <nav className="bg-white p-4 w-full">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-6xl font-bold">
-          <LuConstruction />
+          <GiYarn />
         </Link>
 
         {/* Desktop Nav */}
